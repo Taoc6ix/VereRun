@@ -46,6 +46,7 @@ dependencies:
   
   # UI & Utils
   intl: ^0.18.1
+  fl_chart: ^0.69.0
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +76,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/images/welcome.png
+    - assets/images/16-9-background.png
 
   fonts:
     - family: FugazOne

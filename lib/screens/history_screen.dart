@@ -68,7 +68,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              '${_stats?.totalDistance.toStringAsFixed(2) ?? '0.00'}',
+              _stats?.totalDistance.toStringAsFixed(2) ?? '0.00',
               style: TextStyle(
                 fontFamily: 'FugazOne',
                 fontSize: 64,
@@ -198,8 +198,8 @@ class _HistoryScreenState extends State<HistoryScreen> {
               run.title,
               style: const TextStyle(
                 fontFamily: 'Outfit',
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+                fontSize: 22,
+                fontWeight: FontWeight.w700,
                 color: Colors.white,
               ),
             ),
@@ -210,8 +210,8 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 Text(
                   run.durationFormatted,
                   style: const TextStyle(
-                    fontFamily: 'Outfit',
-                    fontSize: 14,
+                    fontFamily: 'FugazOne',
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
@@ -219,31 +219,30 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 Text(
                   run.pace,
                   style: const TextStyle(
-                    fontFamily: 'Outfit',
-                    fontSize: 14,
+                    fontFamily: 'FugazOne',
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 4),
             Row(
               children: [
                 Text(
                   'Waktu',
                   style: TextStyle(
                     fontFamily: 'Outfit',
-                    fontSize: 12,
+                    fontSize: 16,
                     color: Colors.white.withOpacity(0.8),
                   ),
                 ),
-                const SizedBox(width: 46),
+                const SizedBox(width: 26),
                 Text(
                   'Pace',
                   style: TextStyle(
                     fontFamily: 'Outfit',
-                    fontSize: 12,
+                    fontSize: 16,
                     color: Colors.white.withOpacity(0.8),
                   ),
                 ),
@@ -258,7 +257,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   '${run.distance.toStringAsFixed(2)} Km',
                   style: const TextStyle(
                     fontFamily: 'FugazOne',
-                    fontSize: 24,
+                    fontSize: 30,
                     fontStyle: FontStyle.italic,
                     color: Colors.white,
                   ),

@@ -110,15 +110,6 @@ class _RunningSaveScreenState extends State<RunningSaveScreen> {
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.pop(context),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.edit, color: Colors.black),
-            onPressed: () {
-              // Focus on text field
-              FocusScope.of(context).requestFocus(FocusNode());
-            },
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
