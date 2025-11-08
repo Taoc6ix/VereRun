@@ -37,16 +37,16 @@ Awalnya mau pakai **Laravel** buat backend, tapi kok overkill banget. Jadi untuk
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 600px;">
   <a href="https://www.imagebam.com/view/ME17IK83" target="_blank">
-    <img src="https://thumbs4.imagebam.com/2f/47/c6/ME17IK83_t.png" alt="Screenshot 1" style="width: 100%; border-radius: 8px;"/>
+    <img src="https://images4.imagebam.com/51/fe/17/ME17IKMX_o.png" alt="Screenshot 1" style="width: 100%; border-radius: 8px;"/>
   </a>
   <a href="https://www.imagebam.com/view/ME17IK82" target="_blank">
-    <img src="https://thumbs4.imagebam.com/36/17/91/ME17IK82_t.png" alt="Screenshot 2" style="width: 100%; border-radius: 8px;"/>
+    <img src="https://images4.imagebam.com/d4/13/31/ME17IK83_o.png" alt="Screenshot 2" style="width: 100%; border-radius: 8px;"/>
   </a>
   <a href="https://www.imagebam.com/view/ME17IK81" target="_blank">
-    <img src="https://thumbs4.imagebam.com/50/01/56/ME17IK81_t.png" alt="Screenshot 3" style="width: 100%; border-radius: 8px;"/>
+    <img src="https://images4.imagebam.com/97/38/f5/ME17IK82_o.png" alt="Screenshot 3" style="width: 100%; border-radius: 8px;"/>
   </a>
   <a href="https://www.imagebam.com/view/ME17IK80" target="_blank">
-    <img src="https://thumbs4.imagebam.com/0a/6a/d5/ME17IK80_t.png" alt="Screenshot 4" style="width: 100%; border-radius: 8px;"/>
+    <img src="https://images4.imagebam.com/82/dc/b9/ME17IK80_o.png" alt="Screenshot 4" style="width: 100%; border-radius: 8px;"/>
   </a>
 </div>
 
