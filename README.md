@@ -35,8 +35,6 @@ Awalnya mau pakai **Laravel** buat backend, tapi kok overkill banget. Jadi untuk
 
 ## Preview 📱
 
-Untuk membuat tampilan 2 kolom, kita gunakan **Tabel Markdown** (Header tabel di baris pertama tidak terlihat, tapi fungsinya sebagai penataan kolom).
-
 | | |
 | :---: | :---: |
 | <a href="https://www.imagebam.com/view/ME17IK83" target="_blank"><img src="https://images4.imagebam.com/51/fe/17/ME17IKMX_o.png" alt="Screenshot 1" width="300"/></a> | <a href="https://www.imagebam.com/view/ME17IK82" target="_blank"><img src="https://images4.imagebam.com/d4/13/31/ME17IK83_o.png" alt="Screenshot 2" width="300"/></a> |
