@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/models.dart';
-import '../services/database_helper.dart'; // Pastikan import ini ada
+import '../services/database_helper.dart';
 
 class RunDetailScreen extends StatefulWidget {
   final Run run;
@@ -40,7 +40,6 @@ class _RunDetailScreenState extends State<RunDetailScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            // ... (metric container dan detail card tetap sama)
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
@@ -51,46 +50,24 @@ class _RunDetailScreenState extends State<RunDetailScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   _buildMetric(
-                    '${widget.run.distance.toStringAsFixed(2)} Km',
-                    'Distance',
+                    '${widget.run.distance * 1000}.toStringAsFixed(2)} Km',
+                    'Jarak',
                   ),
                   Container(width: 1, height: 40, color: Colors.white.withOpacity(0.3)),
-                  _buildMetric(widget.run.durationFormatted, 'Duration'),
+                  _buildMetric(widget.run.durationFormatted, 'Durasi'),
                   Container(width: 1, height: 40, color: Colors.white.withOpacity(0.3)),
-                  _buildMetric(widget.run.pace, 'Avg Pace'),
+                  _buildMetric(widget.run.pace, 'Pace'),
                 ],
               ),
             ),
             const SizedBox(height: 24),
-            _buildDetailCard('Jarak', '${(widget.run.distance * 1000).toStringAsFixed(0)} m'),
             _buildDetailCard('Durasi', widget.run.durationFormatted),
-            _buildDetailCard('Rata-rata Pace', widget.run.pace),
+            _buildDetailCard('Pace', widget.run.pace),
             if (widget.run.calories != null) _buildDetailCard('Kalori', '${widget.run.calories} kcal'),
-            if (widget.run.avgPaceSpm != null) _buildDetailCard('Rata-rata Pace', '${widget.run.avgPaceSpm} spm'),
-            if (widget.run.elevationGain != null) _buildDetailCard('Elevation Gain', '${widget.run.elevationGain} ft'),
+            if (widget.run.avgPaceSpm != null) _buildDetailCard('Pace', '${widget.run.avgPaceSpm} spm'),
             const SizedBox(height: 32),
 
-            // Tombol Simpan
-            SizedBox(
-              width: double.infinity,
-              height: 56,
-              child: ElevatedButton(
-                onPressed: () => Navigator.pop(context),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF0D47A1),
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                ),
-                child: const Text(
-                  'Simpan',
-                  style: TextStyle(fontFamily: 'Outfit', fontSize: 18, fontWeight: FontWeight.w600),
-                ),
-              ),
-            ),
-
             const SizedBox(height: 12),
-
-            // Tombol Hapus
             SizedBox(
               width: double.infinity,
               height: 56,
@@ -126,8 +103,8 @@ class _RunDetailScreenState extends State<RunDetailScreen> {
           ),
           TextButton(
             onPressed: () async {
-              Navigator.pop(ctx); // Tutup dialog
-              await _deleteRun(); // Hapus dari DB
+              Navigator.pop(ctx);
+              await _deleteRun();
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
             child: const Text('Hapus'),
@@ -139,7 +116,7 @@ class _RunDetailScreenState extends State<RunDetailScreen> {
 
   Future<void> _deleteRun() async {
     try {
-      await _dbHelper.deleteRun(widget.run.id!); // Pastikan Run punya field `id`
+      await _dbHelper.deleteRun(widget.run.id!);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Aktivitas berhasil dihapus')),
