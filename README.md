@@ -24,12 +24,10 @@ Awalnya mau pakai **Laravel** buat backend, tapi kok overkill banget. Jadi untuk
 
 ## Fitur yang Akan Datang
 
-| Fitur |
-|------|-----------|
-| **Maps & Rute Lari** | Biar makin keren nantinya kasih maps dan rute lari. |
-| **Audio Coaching** | Import Musik Kamu biar lari makin enjoy! |
-| **Berbagai Mode Lari** | Interval, tempo run, long run, recovery — pilih sesuai target latihan. |
-| **Save & Share Image** | Nantinya bisa Export image rute lari buat pamer di sosmed! 📸 |
+- **Maps & Rute Lari** : Biar makin keren nantinya kasih maps dan rute lari.
+- **Audio Coaching** : Import Musik Kamu biar lari makin enjoy!
+- **Berbagai Mode Lari** : Interval, tempo run, long run, recovery — pilih sesuai target latihan.
+- **Save & Share Image** : Nantinya bisa Export image rute lari buat pamer di sosmed! 📸
 
 ---
 
