@@ -14,7 +14,7 @@ class RunDetailScreen extends StatefulWidget {
 }
 
 class _RunDetailScreenState extends State<RunDetailScreen> {
-  UserStats? _stats;
+  // UserStats? _stats;
   List<Run> _runs = [];
   bool _isLoading = true;
 
@@ -29,11 +29,11 @@ class _RunDetailScreenState extends State<RunDetailScreen> {
       final userId = await DatabaseHelper.instance.getCurrentUserId();
       if (userId == null) return;
 
-      final statsMap = await DatabaseHelper.instance.getUserStats(userId);
+      // final statsMap = await DatabaseHelper.instance.getUserStats(userId);
       final runsMap = await DatabaseHelper.instance.getRunsByUser(userId);
 
       setState(() {
-        _stats = UserStats.fromMap(statsMap);
+        // _stats = UserStats.fromMap(statsMap);
         _runs = runsMap.map((e) => Run.fromMap(e)).toList();
         _isLoading = false;
       });
